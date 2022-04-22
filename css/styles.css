@@ -387,10 +387,6 @@ img {
 }
 
 .form-item:last-child {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
     margin-bottom: 20px;
 }
 
@@ -450,12 +446,38 @@ img {
     align-items: center;
 }
 
+.checkbox-thumb {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
 .checkbox-field {
+    position: absolute;
+    -webkit-appearance: none;
+    -moz-appearance: none;
     appearance: none;
 }
 
+.checkbox-icon {
+    margin-right: 8px;
+}
+
+.checkbox-field:not(:checked) + .checkbox-icon{
+    fill: transparent;
+    border: 2px solid var(--headline-color);
+    border-radius: 2px;
+}
+
+.checkbox-field:checked + .checkbox-icon{
+    fill: var(--accent-color);
+}
+
+
 .checkbox-label-field {
-    margin-left: 8px;
+    display: flex;
+    align-items: center;
 
     font-size: 14px;
     line-height: 1.71;
@@ -465,6 +487,15 @@ img {
 
 .privacy-policy-link {
     color: var(--accent-color);
+}
+
+.submit-button-features {
+
+    padding: 10px 55px 10px 56px;
+    margin-top: 30px;
+
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+    border: none;
 }
 
 /* Наши преимущества */

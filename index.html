@@ -46,7 +46,7 @@
                 <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
                 <button type="button" class="accent-button button main-button-features" data-modal-open>Заказать услугу</button>
             </div>
-            <!-- <div class="backdrop is-hidden" data-modal> -->
+            <div class="backdrop is-hidden" data-modal>
                 <div class="modal">
                     <button class="close-modal-button" data-modal-close>
                         <svg class="icon-close" width="30" height="30">
@@ -87,15 +87,16 @@
                                 <label class="label-field" for="comment">Комментарий</label>
                                 <textarea class="input-field text-area" name="comment" id="comment" placeholder="Введите текст"></textarea>
                             </li>
-                            <li class="form-item">
-                                <input class="checkbox-field" type="checkbox" name="privacy-policy" id="privacy-policy">
-                                <label class="checkbox-label-field" for="privacy-policy">Соглашаюсь с рассылкой и принимаю <a class="privacy-policy-link" href="#">Условия договора</a></label>
-                            </li>
                         </ul>
-                        <!-- <div class="privacy-policy-thumb">
-                            <input class="checkbox-field" type="checkbox" name="privacy-policy" id="privacy-policy">
-                            <label class="checkbox-label-field" for="privacy-policy">Соглашаюсь с рассылкой и принимаю Условия договора</label>
-                        </div> -->
+                        <div class="checkbox-thumb">
+                            <label class="checkbox-label-field" for="privacy-policy">
+                                <input class="checkbox-field" type="checkbox" name="privacy-policy" id="privacy-policy">
+                                <svg class="checkbox-icon" width="16" height="15">
+                                    <use  href="./images/icons.svg#icon-check"></use>
+                                </svg>
+                                Соглашаюсь с рассылкой и принимаю <a class="privacy-policy-link" href="#">Условия договора</a></label>
+                        </div>
+                        <button class="submit-button-features accent-button button" type="submit">Отправить</button>
                     </form>
                 </div>
             </div>
